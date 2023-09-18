@@ -1,0 +1,51 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    height: 3em;
+    width: 3em;
+}
+
+.title {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.container {
+    width: 850px;
+    height: 850px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    box-sizing: content-box;
+    width: 33em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.table>.odd :not(.black):not(.title):nth-child(2n + 1) {
+background: white;
+}
+
+.root_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
